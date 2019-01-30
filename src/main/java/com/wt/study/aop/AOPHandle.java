@@ -11,7 +11,6 @@ public class AOPHandle implements InvocationHandler {
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("前置代理");
-
         Object ret = method.invoke(obj, args);
         System.out.println("后置代理");
         return ret;

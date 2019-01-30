@@ -11,6 +11,7 @@ public class AopTest {
 
     /**
      * 使用java的方式实现aop
+     * 被处理的类需要实现接口
      */
     @Test
     public void test1(){
@@ -21,7 +22,8 @@ public class AopTest {
     }
 
     /**
-     * 
+     * 通过cglib方式实现aop
+     * 被处理的类不需要实现接口
      */
     @Test
     public void test2(){
