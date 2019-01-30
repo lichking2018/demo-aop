@@ -20,7 +20,6 @@ public class CglibProxy implements MethodInterceptor {
         System.out.println("前置代理");
         Object result = methodProxy.invokeSuper(o, objects);
         System.out.println("后置代理");
-        
         return null;
     }
 }
